@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :podspec: Igor.podspec
 
 SPEC CHECKSUMS:
-  Igor: 36a2171d8e2ce6f19d66648f5c0bf57212215f49
+  Igor: 0eeb8a62b885e39c5c536a53df1da10da912cf4f
 
 COCOAPODS: 0.23.0

@@ -8,6 +8,8 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/dhemery/igor.git", :tag => "0.5.0" }
   s.platform = :ios, '5.1'
   s.source_files = 'igor/**/*.{h,m}'
+  s.exclude_files = 'igor/engine/DEIgorSelfRegisteringSelectorEngine.m'
+
   s.requires_arc = true
-  s.license = {:type => 'MIT', :file => 'LICENSE.txt' }
+  s.license = {:type => 'MIT', :file => 'README.txt' }
 end
