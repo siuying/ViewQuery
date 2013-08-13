@@ -8,8 +8,8 @@
 
 #import "IGUIViewController.h"
 
-#define UIQUERY_USE_SHORTHAND
-#import "IGUIQuery.h"
+#define IG_VIEWQUERY_USE_SHORTHAND
+#import "IGViewQuery.h"
 
 @interface IGUIViewController ()
 
@@ -22,7 +22,7 @@
     [super viewDidLoad];
 
     // search by accessibilityIdentifier
-    IGUIQueryWrapper* q = $(self, @"#label");
+    IGViewWrapper* q = $(self, @"#label");
     NSLog(@"query: %@", q);
     
     // search by accessibilityLabel

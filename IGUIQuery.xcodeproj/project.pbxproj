@@ -23,12 +23,12 @@
 		540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
 		540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */; };
 		540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */; };
-		5434D60817BA4EAA008A65E4 /* IGUIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGUIQuery.m */; };
-		5434D60917BA4EAE008A65E4 /* IGUIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGUIQuery.m */; };
-		5434D64B17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m */; };
-		5434D64C17BA6506008A65E4 /* IGUIQueryWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m */; };
-		5434D64F17BA84E6008A65E4 /* IGUIQueryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGUIQueryWrapper.m */; };
-		5434D65017BA84EF008A65E4 /* IGUIQueryWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGUIQueryWrapper.m */; };
+		5434D60817BA4EAA008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGViewQuery.m */; };
+		5434D60917BA4EAE008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGViewQuery.m */; };
+		5434D64B17BA64FF008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */; };
+		5434D64C17BA6506008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */; };
+		5434D64F17BA84E6008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */; };
+		5434D65017BA84EF008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */; };
 		F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -65,13 +65,13 @@
 		540C2E3B17BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIQueryTests.h; sourceTree = "<group>"; };
 		540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIQueryTests.m; sourceTree = "<group>"; };
-		5434D60617BA4EAA008A65E4 /* IGUIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIQuery.h; path = Classes/IGUIQuery.h; sourceTree = "<group>"; };
-		5434D60717BA4EAA008A65E4 /* IGUIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIQuery.m; path = Classes/IGUIQuery.m; sourceTree = "<group>"; };
+		5434D60617BA4EAA008A65E4 /* IGViewQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewQuery.h; path = Classes/IGViewQuery.h; sourceTree = "<group>"; };
+		5434D60717BA4EAA008A65E4 /* IGViewQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewQuery.m; path = Classes/IGViewQuery.m; sourceTree = "<group>"; };
 		5434D63E17BA5598008A65E4 /* libPods-Igor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Igor.a"; path = "Pods/build/Release-iphoneos/libPods-Igor.a"; sourceTree = "<group>"; };
-		5434D64917BA64FF008A65E4 /* IGUIQueryWrapper+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGUIQueryWrapper+Functional.h"; path = "Classes/IGUIQueryWrapper+Functional.h"; sourceTree = "<group>"; };
-		5434D64A17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGUIQueryWrapper+Functional.m"; path = "Classes/IGUIQueryWrapper+Functional.m"; sourceTree = "<group>"; };
-		5434D64D17BA84E5008A65E4 /* IGUIQueryWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIQueryWrapper.h; path = Classes/IGUIQueryWrapper.h; sourceTree = "<group>"; };
-		5434D64E17BA84E6008A65E4 /* IGUIQueryWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIQueryWrapper.m; path = Classes/IGUIQueryWrapper.m; sourceTree = "<group>"; };
+		5434D64917BA64FF008A65E4 /* IGViewWrapper+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGViewWrapper+Functional.h"; path = "Classes/IGViewWrapper+Functional.h"; sourceTree = "<group>"; };
+		5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGViewWrapper+Functional.m"; path = "Classes/IGViewWrapper+Functional.m"; sourceTree = "<group>"; };
+		5434D64D17BA84E5008A65E4 /* IGViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewWrapper.h; path = Classes/IGViewWrapper.h; sourceTree = "<group>"; };
+		5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewWrapper.m; path = Classes/IGViewWrapper.m; sourceTree = "<group>"; };
 		76D1ABB13A1C48368459C806 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B63A94E9627843F3BD7975BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -184,12 +184,12 @@
 		5434D60517BA4E82008A65E4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5434D60617BA4EAA008A65E4 /* IGUIQuery.h */,
-				5434D60717BA4EAA008A65E4 /* IGUIQuery.m */,
-				5434D64D17BA84E5008A65E4 /* IGUIQueryWrapper.h */,
-				5434D64E17BA84E6008A65E4 /* IGUIQueryWrapper.m */,
-				5434D64917BA64FF008A65E4 /* IGUIQueryWrapper+Functional.h */,
-				5434D64A17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m */,
+				5434D60617BA4EAA008A65E4 /* IGViewQuery.h */,
+				5434D60717BA4EAA008A65E4 /* IGViewQuery.m */,
+				5434D64D17BA84E5008A65E4 /* IGViewWrapper.h */,
+				5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */,
+				5434D64917BA64FF008A65E4 /* IGViewWrapper+Functional.h */,
+				5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -340,9 +340,9 @@
 				540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */,
 				540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */,
 				540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */,
-				5434D60817BA4EAA008A65E4 /* IGUIQuery.m in Sources */,
-				5434D64B17BA64FF008A65E4 /* IGUIQueryWrapper+Functional.m in Sources */,
-				5434D64F17BA84E6008A65E4 /* IGUIQueryWrapper.m in Sources */,
+				5434D60817BA4EAA008A65E4 /* IGViewQuery.m in Sources */,
+				5434D64B17BA64FF008A65E4 /* IGViewWrapper+Functional.m in Sources */,
+				5434D64F17BA84E6008A65E4 /* IGViewWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +351,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */,
-				5434D60917BA4EAE008A65E4 /* IGUIQuery.m in Sources */,
-				5434D64C17BA6506008A65E4 /* IGUIQueryWrapper+Functional.m in Sources */,
-				5434D65017BA84EF008A65E4 /* IGUIQueryWrapper.m in Sources */,
+				5434D60917BA4EAE008A65E4 /* IGViewQuery.m in Sources */,
+				5434D64C17BA6506008A65E4 /* IGViewWrapper+Functional.m in Sources */,
+				5434D65017BA84EF008A65E4 /* IGViewWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
 //
 
-#import "IGUIQueryWrapper.h"
+#import "IGViewWrapper.h"
 
-@interface IGUIQueryWrapper (Functional)
+@interface IGViewWrapper (Functional)
 
--(IGUIQueryWrapper*) first;
+-(IGViewWrapper*) first;
 
--(IGUIQueryWrapper*) last;
+-(IGViewWrapper*) last;
 
 @end

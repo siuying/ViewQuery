@@ -1,19 +1,19 @@
 //
-//  IGUIQueryWrapper.m
-//  IGUIQuery
+//  IGViewWrapper.m
+//  IGViewQuery
 //
 //  Created by Chong Francis on 13年8月13日.
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
 //
 
-#import "IGUIQueryWrapper.h"
-#import "IGUIQuery.h"
+#import "IGViewWrapper.h"
+#import "IGViewQuery.h"
 #import "DEIgor.h"
 
-@interface IGUIQueryWrapper()
+@interface IGViewWrapper()
 @end
 
-@implementation IGUIQueryWrapper
+@implementation IGViewWrapper
 
 -(id) initWithRootView:(UIView*)view query:(NSString*)query
 {
@@ -51,20 +51,21 @@
 
 #pragma mark -
 
--(IGUIQueryWrapper*) query:(NSString*)query
+-(IGViewWrapper*) query:(NSString*)query
 {
-    __block IGUIQueryWrapper* result = IGUIQuerify(nil);
+    __block IGViewWrapper* result = IGViewQuerify(nil);
     [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
-        IGUIQueryWrapper* q = [IGUIQueryWrapper wrapperWithRootView:view query:query];
+        IGViewWrapper* q = [IGViewWrapper wrapperWithRootView:view query:query];
         result = [result andQuery:q];
     }];
     return result;
 }
 
--(IGUIQueryWrapper*) andQuery:(IGUIQueryWrapper*)query {
+-(IGViewWrapper*) andQuery:(IGViewWrapper*)query
+{
     NSMutableArray* views = [NSMutableArray arrayWithArray:self.views];
     [views addObjectsFromArray:query.views];
-    return [IGUIQueryWrapper wrapperWithViews:views];
+    return [IGViewWrapper wrapperWithViews:views];
 }
 
 #pragma mark - NSObject

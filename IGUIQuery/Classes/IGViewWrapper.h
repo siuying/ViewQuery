@@ -1,6 +1,6 @@
 //
-//  IGUIQueryWrapper.h
-//  IGUIQuery
+//  IGViewWrapper.h
+//  IGViewQuerify
 //
 //  Created by Chong Francis on 13年8月13日.
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface IGUIQueryWrapper : NSObject
+@interface IGViewWrapper : NSObject
 
 @property (nonatomic, strong) NSArray* views;
 
@@ -24,8 +24,8 @@
 
 +(id) wrapperWithViews:(NSArray*)views;
 
--(IGUIQueryWrapper*) query:(NSString*)query;
+-(IGViewWrapper*) query:(NSString*)query;
 
--(IGUIQueryWrapper*) andQuery:(IGUIQueryWrapper*)query;
+-(IGViewWrapper*) andQuery:(IGViewWrapper*)query;
 
 @end
