@@ -48,3 +48,16 @@ Then use $(__viewOrViewController__, __query__) to create query:
 
 For details, check [Igor Implementation](https://github.com/dhemery/igor/wiki/Implementation-Status).
 
+## FAQ
+
+### Can I set ``accessibilityIdentifier`` (``#identifier``) in Interface Builder?
+
+Not directly. However, it can be set in IB by using the Identity Inspector tab's 'User Defined Runtime Attributes':
+
+    Key Path: accessibilityIdentifier
+    Type: String
+    Value: Chosen accessibilityIdentifier text
+
+## License
+
+This software is licensed in [MIT License](https://github.com/siuying/ViewQuery/blob/master/LICENSE.txt).
