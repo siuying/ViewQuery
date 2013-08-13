@@ -11,7 +11,7 @@ Add these two lines to top of your view controller implementation:
 #import "IGViewQuery.h"
 ```
 
-Then use $(__viewOrViewController__, __query__) to create query:
+Then use ``$( ___viewOrViewController___ , ___query___)`` to create query:
 
 ```objective-c
     // iterate with query
