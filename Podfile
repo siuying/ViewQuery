@@ -1,4 +1,4 @@
 platform :ios, '6.0'
 
-pod 'Igor', :podspec => 'Igor.podspec'
+pod 'Igor', '~> 0.5.0'
 

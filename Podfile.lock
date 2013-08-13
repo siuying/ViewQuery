@@ -2,13 +2,9 @@ PODS:
   - Igor (0.5.0)
 
 DEPENDENCIES:
-  - Igor (from `Igor.podspec`)
-
-EXTERNAL SOURCES:
-  Igor:
-    :podspec: Igor.podspec
+  - Igor (~> 0.5.0)
 
 SPEC CHECKSUMS:
-  Igor: 0eeb8a62b885e39c5c536a53df1da10da912cf4f
+  Igor: 2c6992b894d84e6f39df310eeca05227f469d186
 
 COCOAPODS: 0.23.0
