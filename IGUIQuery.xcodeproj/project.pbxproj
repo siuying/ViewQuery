@@ -23,6 +23,12 @@
 		540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
 		540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */; };
 		540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */; };
+		5434D60817BA4EAA008A65E4 /* IGUIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGUIQuery.m */; };
+		5434D60917BA4EAE008A65E4 /* IGUIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGUIQuery.m */; };
+		5434D60C17BA4FFF008A65E4 /* UIView+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */; };
+		5434D60F17BA5083008A65E4 /* UIViewController+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */; };
+		5434D61217BA5145008A65E4 /* NSArray+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */; };
+		F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,16 @@
 		540C2E3B17BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIQueryTests.h; sourceTree = "<group>"; };
 		540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIQueryTests.m; sourceTree = "<group>"; };
+		5434D60617BA4EAA008A65E4 /* IGUIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIQuery.h; path = Classes/IGUIQuery.h; sourceTree = "<group>"; };
+		5434D60717BA4EAA008A65E4 /* IGUIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIQuery.m; path = Classes/IGUIQuery.m; sourceTree = "<group>"; };
+		5434D60A17BA4FFF008A65E4 /* UIView+UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+UIQuery.h"; path = "Classes/UIView+UIQuery.h"; sourceTree = "<group>"; };
+		5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+UIQuery.m"; path = "Classes/UIView+UIQuery.m"; sourceTree = "<group>"; };
+		5434D60D17BA5083008A65E4 /* UIViewController+UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+UIQuery.h"; path = "Classes/UIViewController+UIQuery.h"; sourceTree = "<group>"; };
+		5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+UIQuery.m"; path = "Classes/UIViewController+UIQuery.m"; sourceTree = "<group>"; };
+		5434D61017BA5145008A65E4 /* NSArray+UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+UIQuery.h"; path = "Classes/NSArray+UIQuery.h"; sourceTree = "<group>"; };
+		5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+UIQuery.m"; path = "Classes/NSArray+UIQuery.m"; sourceTree = "<group>"; };
+		76D1ABB13A1C48368459C806 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B63A94E9627843F3BD7975BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +84,7 @@
 				540C2E0E17BA4AA400BC8CC0 /* UIKit.framework in Frameworks */,
 				540C2E1017BA4AA400BC8CC0 /* Foundation.framework in Frameworks */,
 				540C2E1217BA4AA400BC8CC0 /* CoreGraphics.framework in Frameworks */,
+				F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 				540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */,
 				540C2E0C17BA4AA400BC8CC0 /* Frameworks */,
 				540C2E0B17BA4AA400BC8CC0 /* Products */,
+				76D1ABB13A1C48368459C806 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +128,7 @@
 				540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */,
 				540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */,
 				540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */,
+				B63A94E9627843F3BD7975BB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -117,6 +136,7 @@
 		540C2E1317BA4AA400BC8CC0 /* IGUIQuery */ = {
 			isa = PBXGroup;
 			children = (
+				5434D60517BA4E82008A65E4 /* Classes */,
 				540C2E1C17BA4AA400BC8CC0 /* IGUIAppDelegate.h */,
 				540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */,
 				540C2E2517BA4AA500BC8CC0 /* IGUIViewController.h */,
@@ -160,6 +180,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5434D60517BA4E82008A65E4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5434D60617BA4EAA008A65E4 /* IGUIQuery.h */,
+				5434D60717BA4EAA008A65E4 /* IGUIQuery.m */,
+				5434D60A17BA4FFF008A65E4 /* UIView+UIQuery.h */,
+				5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */,
+				5434D60D17BA5083008A65E4 /* UIViewController+UIQuery.h */,
+				5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */,
+				5434D61017BA5145008A65E4 /* NSArray+UIQuery.h */,
+				5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQuery" */;
 			buildPhases = (
+				40557AC51A944C0C877BD284 /* Check Pods Manifest.lock */,
 				540C2E0617BA4AA400BC8CC0 /* Sources */,
 				540C2E0717BA4AA400BC8CC0 /* Frameworks */,
 				540C2E0817BA4AA400BC8CC0 /* Resources */,
+				05B8FF2DE3114A0FBB308FE5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,6 +288,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		05B8FF2DE3114A0FBB308FE5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40557AC51A944C0C877BD284 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		540C2E2E17BA4AA500BC8CC0 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -274,6 +341,10 @@
 				540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */,
 				540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */,
 				540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */,
+				5434D60817BA4EAA008A65E4 /* IGUIQuery.m in Sources */,
+				5434D60C17BA4FFF008A65E4 /* UIView+UIQuery.m in Sources */,
+				5434D60F17BA5083008A65E4 /* UIViewController+UIQuery.m in Sources */,
+				5434D61217BA5145008A65E4 /* NSArray+UIQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */,
+				5434D60917BA4EAE008A65E4 /* IGUIQuery.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +453,7 @@
 		};
 		540C2E4317BA4AA500BC8CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
@@ -392,6 +465,7 @@
 		};
 		540C2E4417BA4AA500BC8CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
@@ -454,6 +528,7 @@
 				540C2E4417BA4AA500BC8CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQueryTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +537,7 @@
 				540C2E4717BA4AA500BC8CC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
