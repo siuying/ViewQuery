@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540C2E0E17BA4AA400BC8CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */; };
+		540C2E1017BA4AA400BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
+		540C2E1217BA4AA400BC8CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */; };
+		540C2E1817BA4AA400BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */; };
+		540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1917BA4AA400BC8CC0 /* main.m */; };
+		540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */; };
+		540C2E2017BA4AA500BC8CC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1F17BA4AA500BC8CC0 /* Default.png */; };
+		540C2E2217BA4AA500BC8CC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2117BA4AA500BC8CC0 /* Default@2x.png */; };
+		540C2E2417BA4AA500BC8CC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */; };
+		540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */; };
+		540C2E2A17BA4AA500BC8CC0 /* IGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */; };
+		540C2E3217BA4AA500BC8CC0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */; };
+		540C2E3317BA4AA500BC8CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */; };
+		540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
+		540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */; };
+		540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		540C2E3517BA4AA500BC8CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540C2E0217BA4AA400BC8CC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540C2E0917BA4AA400BC8CC0;
+			remoteInfo = IGUIQuery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGUIQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		540C2E1517BA4AA400BC8CC0 /* IGUIQuery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUIQuery-Info.plist"; sourceTree = "<group>"; };
+		540C2E1717BA4AA400BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		540C2E1917BA4AA400BC8CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540C2E1B17BA4AA400BC8CC0 /* IGUIQuery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGUIQuery-Prefix.pch"; sourceTree = "<group>"; };
+		540C2E1C17BA4AA400BC8CC0 /* IGUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIAppDelegate.h; sourceTree = "<group>"; };
+		540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIAppDelegate.m; sourceTree = "<group>"; };
+		540C2E1F17BA4AA500BC8CC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		540C2E2117BA4AA500BC8CC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		540C2E2517BA4AA500BC8CC0 /* IGUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIViewController.h; sourceTree = "<group>"; };
+		540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIViewController.m; sourceTree = "<group>"; };
+		540C2E2917BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IGUIViewController.xib; sourceTree = "<group>"; };
+		540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGUIQueryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		540C2E3917BA4AA500BC8CC0 /* IGUIQueryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUIQueryTests-Info.plist"; sourceTree = "<group>"; };
+		540C2E3B17BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIQueryTests.h; sourceTree = "<group>"; };
+		540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIQueryTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540C2E0717BA4AA400BC8CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E0E17BA4AA400BC8CC0 /* UIKit.framework in Frameworks */,
+				540C2E1017BA4AA400BC8CC0 /* Foundation.framework in Frameworks */,
+				540C2E1217BA4AA400BC8CC0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540C2E2C17BA4AA500BC8CC0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E3217BA4AA500BC8CC0 /* SenTestingKit.framework in Frameworks */,
+				540C2E3317BA4AA500BC8CC0 /* UIKit.framework in Frameworks */,
+				540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540C2E0117BA4AA400BC8CC0 = {
+			isa = PBXGroup;
+			children = (
+				540C2E1317BA4AA400BC8CC0 /* IGUIQuery */,
+				540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */,
+				540C2E0C17BA4AA400BC8CC0 /* Frameworks */,
+				540C2E0B17BA4AA400BC8CC0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540C2E0B17BA4AA400BC8CC0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */,
+				540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540C2E0C17BA4AA400BC8CC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */,
+				540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */,
+				540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */,
+				540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540C2E1317BA4AA400BC8CC0 /* IGUIQuery */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E1C17BA4AA400BC8CC0 /* IGUIAppDelegate.h */,
+				540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */,
+				540C2E2517BA4AA500BC8CC0 /* IGUIViewController.h */,
+				540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */,
+				540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */,
+				540C2E1417BA4AA400BC8CC0 /* Supporting Files */,
+			);
+			path = IGUIQuery;
+			sourceTree = "<group>";
+		};
+		540C2E1417BA4AA400BC8CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E1517BA4AA400BC8CC0 /* IGUIQuery-Info.plist */,
+				540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */,
+				540C2E1917BA4AA400BC8CC0 /* main.m */,
+				540C2E1B17BA4AA400BC8CC0 /* IGUIQuery-Prefix.pch */,
+				540C2E1F17BA4AA500BC8CC0 /* Default.png */,
+				540C2E2117BA4AA500BC8CC0 /* Default@2x.png */,
+				540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */,
+				540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */,
+				540C2E3817BA4AA500BC8CC0 /* Supporting Files */,
+			);
+			path = IGUIQueryTests;
+			sourceTree = "<group>";
+		};
+		540C2E3817BA4AA500BC8CC0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540C2E3917BA4AA500BC8CC0 /* IGUIQueryTests-Info.plist */,
+				540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540C2E0917BA4AA400BC8CC0 /* IGUIQuery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQuery" */;
+			buildPhases = (
+				540C2E0617BA4AA400BC8CC0 /* Sources */,
+				540C2E0717BA4AA400BC8CC0 /* Frameworks */,
+				540C2E0817BA4AA400BC8CC0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGUIQuery;
+			productName = IGUIQuery;
+			productReference = 540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */;
+			productType = "com.apple.product-type.application";
+		};
+		540C2E2F17BA4AA500BC8CC0 /* IGUIQueryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQueryTests" */;
+			buildPhases = (
+				540C2E2B17BA4AA500BC8CC0 /* Sources */,
+				540C2E2C17BA4AA500BC8CC0 /* Frameworks */,
+				540C2E2D17BA4AA500BC8CC0 /* Resources */,
+				540C2E2E17BA4AA500BC8CC0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				540C2E3617BA4AA500BC8CC0 /* PBXTargetDependency */,
+			);
+			name = IGUIQueryTests;
+			productName = IGUIQueryTests;
+			productReference = 540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540C2E0217BA4AA400BC8CC0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IGUI;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ignition Soft";
+			};
+			buildConfigurationList = 540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGUIQuery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 540C2E0117BA4AA400BC8CC0;
+			productRefGroup = 540C2E0B17BA4AA400BC8CC0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540C2E0917BA4AA400BC8CC0 /* IGUIQuery */,
+				540C2E2F17BA4AA500BC8CC0 /* IGUIQueryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540C2E0817BA4AA400BC8CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E1817BA4AA400BC8CC0 /* InfoPlist.strings in Resources */,
+				540C2E2017BA4AA500BC8CC0 /* Default.png in Resources */,
+				540C2E2217BA4AA500BC8CC0 /* Default@2x.png in Resources */,
+				540C2E2417BA4AA500BC8CC0 /* Default-568h@2x.png in Resources */,
+				540C2E2A17BA4AA500BC8CC0 /* IGUIViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540C2E2D17BA4AA500BC8CC0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		540C2E2E17BA4AA500BC8CC0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540C2E0617BA4AA400BC8CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */,
+				540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */,
+				540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540C2E2B17BA4AA500BC8CC0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		540C2E3617BA4AA500BC8CC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540C2E0917BA4AA400BC8CC0 /* IGUIQuery */;
+			targetProxy = 540C2E3517BA4AA500BC8CC0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540C2E1717BA4AA400BC8CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540C2E2917BA4AA500BC8CC0 /* en */,
+			);
+			name = IGUIViewController.xib;
+			sourceTree = "<group>";
+		};
+		540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540C2E3B17BA4AA500BC8CC0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540C2E4017BA4AA500BC8CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		540C2E4117BA4AA500BC8CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		540C2E4317BA4AA500BC8CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGUIQuery/IGUIQuery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		540C2E4417BA4AA500BC8CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGUIQuery/IGUIQuery-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		540C2E4617BA4AA500BC8CC0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGUIQuery.app/IGUIQuery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGUIQueryTests/IGUIQueryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		540C2E4717BA4AA500BC8CC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGUIQuery.app/IGUIQuery";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGUIQueryTests/IGUIQueryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGUIQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540C2E4017BA4AA500BC8CC0 /* Debug */,
+				540C2E4117BA4AA500BC8CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQuery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540C2E4317BA4AA500BC8CC0 /* Debug */,
+				540C2E4417BA4AA500BC8CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQueryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540C2E4617BA4AA500BC8CC0 /* Debug */,
+				540C2E4717BA4AA500BC8CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540C2E0217BA4AA400BC8CC0 /* Project object */;
+}
