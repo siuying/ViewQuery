@@ -14,10 +14,10 @@ Add these two lines to top of your view controller implementation:
 Then use ``$( ___viewOrViewController___ , ___query___)`` to create query:
 
 ```objective-c
-    // iterate with query
-    [$(self, @"#form > UIView > UILabel[text == 'User']") each:^(UIView* view){
-        view.backgroundColor = [UIColor blueColor];
-    }];
+// Find all UILabel under form having text 'User', change the background color to blue
+[$(self, @"#form UILabel[text == 'User']") each:^(UIView* view){
+    view.backgroundColor = [UIColor blueColor];
+}];
 ```
 
 ### What is IGViewWrapper?
