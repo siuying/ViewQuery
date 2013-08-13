@@ -6,11 +6,12 @@
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
 //
 
-#import "IGUIQuery+Functional.h"
+#import "IGUIQueryWrapper+Functional.h"
+#import "IGUIQuery.h"
 
-@implementation IGUIQuery (Functional)
+@implementation IGUIQueryWrapper (Functional)
 
--(IGUIQuery*) first {
+-(IGUIQueryWrapper*) first {
     if ([self.views count] > 0) {
         return IGUIQuerify(self.views[0]);
     } else {
@@ -18,7 +19,7 @@
     }
 }
 
--(IGUIQuery*) last {
+-(IGUIQueryWrapper*) last {
     if ([self.views count] > 0) {
         return IGUIQuerify([self.views lastObject]);
     } else {

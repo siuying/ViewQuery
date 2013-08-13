@@ -7,31 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIView+UIQuery.h"
-#import "UIViewController+UIQuery.h"
 
-#import "NSArray+UIQuery.h"
+// define UIQUERY_USE_SHORTHAND to use $ instead of IGUIQuery
+#ifdef UIQUERY_USE_SHORTHAND
+#define $ IGUIQuery
+#endif
 
-extern IGUIQuery* IGUIQuerify(id<NSObject> object);
+@class IGUIQueryWrapper;
 
-@interface IGUIQuery : NSObject
-
-@property (nonatomic, strong) NSArray* views;
-
--(id) initWithRootView:(UIView*)view query:(NSString*)query;
-
--(id) initWithView:(UIView*)view;
-
--(id) initWithViews:(NSArray*)views;
-
-+(id) queryWithRootView:(UIView*)view query:(NSString*)query;
-
-+(id) queryWithView:(UIView*)view;
-
-+(id) queryWithViews:(NSArray*)views;
-
--(IGUIQuery*) query:(NSString*)query;
-
--(IGUIQuery*) and:(IGUIQuery*)query;
-
-@end
+extern IGUIQueryWrapper* IGUIQuerify(id<NSObject> object);
+extern IGUIQueryWrapper* IGUIQuery(id<NSObject> object, NSString* query);

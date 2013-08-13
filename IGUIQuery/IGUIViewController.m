@@ -7,9 +7,9 @@
 //
 
 #import "IGUIViewController.h"
+
+#define UIQUERY_USE_SHORTHAND
 #import "IGUIQuery.h"
-#import "UIView+UIQuery.h"
-#import "UIViewController+UIQuery.h"
 
 @interface IGUIViewController ()
 
@@ -22,10 +22,19 @@
     [super viewDidLoad];
 
     // search by accessibilityIdentifier
-    IGUIQuery* q = [IGUIQuerify(self) query:@"#label"];
+    IGUIQueryWrapper* q = $(self, @"#label");
     NSLog(@"query: %@", q);
     
-    q = [IGUIQuerify(self) query:@"#label"];
+    // search by accessibilityLabel
+    q = $(self, @"[accessibilityLabel == 'Button 2']");
+    NSLog(@"query: %@", q);
+    
+    // search by tag
+    q = $(self, @"[tag == 2]");
+    NSLog(@"query: %@", q);
+    
+    // search with complex query
+    q = $(self, @"#group2 > UILabel");
     NSLog(@"query: %@", q);
 }
 

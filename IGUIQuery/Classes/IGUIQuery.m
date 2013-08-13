@@ -8,87 +8,30 @@
 
 #import "IGUIQuery.h"
 #import "DEIgor.h"
+#import "IGUIQueryWrapper.h"
 
-IGUIQuery* IGUIQuerify(id<NSObject> object) {
+IGUIQueryWrapper* IGUIQuerify(id<NSObject> object) {
     if (!object) {
-        return [IGUIQuery queryWithViews:@[]];
+        return [IGUIQueryWrapper wrapperWithViews:@[]];
     }
     
     if ([object isKindOfClass:[NSArray class]]) {
-        return [IGUIQuery queryWithViews:(NSArray*)object];
+        return [IGUIQueryWrapper wrapperWithViews:(NSArray*)object];
     }
     
     if ([object isKindOfClass:[UIView class]]) {
-        return [IGUIQuery queryWithView:(UIView*)object];
+        return [IGUIQueryWrapper wrapperWithView:(UIView*)object];
     }
-
+    
     if ([object isKindOfClass:[UIViewController class]]) {
         UIViewController* controller = (UIViewController*) object;
-        return [IGUIQuery queryWithView:controller.view];
+        return [IGUIQueryWrapper wrapperWithView:controller.view];
     }
-
+    
     return nil;
 }
 
-@implementation IGUIQuery
-
--(id) initWithRootView:(UIView*)view query:(NSString*)query
-{
-    return [self initWithViews:[[DEIgor igor] findViewsThatMatchQuery:query inTree:view]];
+IGUIQueryWrapper* IGUIQuery(id<NSObject> context, NSString* query) {
+    return [IGUIQuerify(context) query:query];
 }
 
--(id) initWithView:(UIView*)view
-{
-    return [self initWithViews:@[view]];
-}
-
--(id) initWithViews:(NSArray*)views
-{
-    self = [super init];
-    if (self) {
-        _views = views;
-    }
-    return self;
-}
-
-+(id) queryWithRootView:(UIView*)view query:(NSString*)query
-{
-    return [[self alloc] initWithRootView:view query:query];
-}
-
-+(id) queryWithView:(UIView*)view
-{
-    return [[self alloc] initWithView:view];
-}
-
-+(id) queryWithViews:(NSArray*)views
-{
-    return [[self alloc] initWithViews:views];
-}
-
-#pragma mark -
-
--(IGUIQuery*) query:(NSString*)query
-{
-    __block IGUIQuery* result = IGUIQuerify(nil);
-    [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
-        IGUIQuery* q = [IGUIQuery queryWithRootView:view query:query];
-        result = [result and:q];
-    }];
-    return result;
-}
-
--(IGUIQuery*) and:(IGUIQuery*)query {
-    NSMutableArray* views = [NSMutableArray arrayWithArray:self.views];
-    [views addObjectsFromArray:query.views];
-    return [IGUIQuery queryWithViews:views];
-}
-
-#pragma mark - NSObject
-
--(NSString*) description
-{
-    return [NSString stringWithFormat:@"<IGUIQuery views=%@>", self.views];
-}
-
-@end
