@@ -11,7 +11,7 @@
 
 @implementation UIView (UIQuery)
 
--(IGUIQuery*) uiq_query:(NSString*)query
+-(IGUIQuery*) viewWithQuery:(NSString*)query
 {
     return [IGUIQuery queryWithRootView:self query:query];
 }

@@ -1,17 +1,17 @@
 //
-//  NSArray+UIQuery.h
+//  IGUIQuery+Functional.h
 //  IGUIQuery
 //
 //  Created by Chong Francis on 13年8月13日.
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "IGUIQuery.h"
 
-@class IGUIQuery;
+@interface IGUIQuery (Functional)
 
-@interface NSArray (UIQuery)
+-(IGUIQuery*) first;
 
--(IGUIQuery*) uiq_query;
+-(IGUIQuery*) last;
 
 @end

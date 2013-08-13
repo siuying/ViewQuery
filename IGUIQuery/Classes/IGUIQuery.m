@@ -14,12 +14,17 @@ IGUIQuery* IGUIQuerify(id<NSObject> object) {
         return [IGUIQuery queryWithViews:@[]];
     }
     
-    if ([object isMemberOfClass:[NSArray class]]) {
+    if ([object isKindOfClass:[NSArray class]]) {
         return [IGUIQuery queryWithViews:(NSArray*)object];
     }
     
-    if ([object isMemberOfClass:[UIView class]]) {
+    if ([object isKindOfClass:[UIView class]]) {
         return [IGUIQuery queryWithView:(UIView*)object];
+    }
+
+    if ([object isKindOfClass:[UIViewController class]]) {
+        UIViewController* controller = (UIViewController*) object;
+        return [IGUIQuery queryWithView:controller.view];
     }
 
     return nil;
@@ -59,6 +64,31 @@ IGUIQuery* IGUIQuerify(id<NSObject> object) {
 +(id) queryWithViews:(NSArray*)views
 {
     return [[self alloc] initWithViews:views];
+}
+
+#pragma mark -
+
+-(IGUIQuery*) query:(NSString*)query
+{
+    __block IGUIQuery* result = IGUIQuerify(nil);
+    [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
+        IGUIQuery* q = [IGUIQuery queryWithRootView:view query:query];
+        result = [result and:q];
+    }];
+    return result;
+}
+
+-(IGUIQuery*) and:(IGUIQuery*)query {
+    NSMutableArray* views = [NSMutableArray arrayWithArray:self.views];
+    [views addObjectsFromArray:query.views];
+    return [IGUIQuery queryWithViews:views];
+}
+
+#pragma mark - NSObject
+
+-(NSString*) description
+{
+    return [NSString stringWithFormat:@"<IGUIQuery views=%@>", self.views];
 }
 
 @end

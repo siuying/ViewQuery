@@ -28,6 +28,8 @@
 		5434D60C17BA4FFF008A65E4 /* UIView+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */; };
 		5434D60F17BA5083008A65E4 /* UIViewController+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */; };
 		5434D61217BA5145008A65E4 /* NSArray+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */; };
+		5434D64B17BA64FF008A65E4 /* IGUIQuery+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGUIQuery+Functional.m */; };
+		5434D64C17BA6506008A65E4 /* IGUIQuery+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGUIQuery+Functional.m */; };
 		F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +75,8 @@
 		5434D61017BA5145008A65E4 /* NSArray+UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+UIQuery.h"; path = "Classes/NSArray+UIQuery.h"; sourceTree = "<group>"; };
 		5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+UIQuery.m"; path = "Classes/NSArray+UIQuery.m"; sourceTree = "<group>"; };
 		5434D63E17BA5598008A65E4 /* libPods-Igor.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-Igor.a"; path = "Pods/build/Release-iphoneos/libPods-Igor.a"; sourceTree = "<group>"; };
+		5434D64917BA64FF008A65E4 /* IGUIQuery+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGUIQuery+Functional.h"; path = "Classes/IGUIQuery+Functional.h"; sourceTree = "<group>"; };
+		5434D64A17BA64FF008A65E4 /* IGUIQuery+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGUIQuery+Functional.m"; path = "Classes/IGUIQuery+Functional.m"; sourceTree = "<group>"; };
 		76D1ABB13A1C48368459C806 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B63A94E9627843F3BD7975BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -187,6 +191,8 @@
 			children = (
 				5434D60617BA4EAA008A65E4 /* IGUIQuery.h */,
 				5434D60717BA4EAA008A65E4 /* IGUIQuery.m */,
+				5434D64917BA64FF008A65E4 /* IGUIQuery+Functional.h */,
+				5434D64A17BA64FF008A65E4 /* IGUIQuery+Functional.m */,
 				5434D60A17BA4FFF008A65E4 /* UIView+UIQuery.h */,
 				5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */,
 				5434D60D17BA5083008A65E4 /* UIViewController+UIQuery.h */,
@@ -347,6 +353,7 @@
 				5434D60C17BA4FFF008A65E4 /* UIView+UIQuery.m in Sources */,
 				5434D60F17BA5083008A65E4 /* UIViewController+UIQuery.m in Sources */,
 				5434D61217BA5145008A65E4 /* NSArray+UIQuery.m in Sources */,
+				5434D64B17BA64FF008A65E4 /* IGUIQuery+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +363,7 @@
 			files = (
 				540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */,
 				5434D60917BA4EAE008A65E4 /* IGUIQuery.m in Sources */,
+				5434D64C17BA6506008A65E4 /* IGUIQuery+Functional.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

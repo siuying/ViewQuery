@@ -7,6 +7,9 @@
 //
 
 #import "IGUIViewController.h"
+#import "IGUIQuery.h"
+#import "UIView+UIQuery.h"
+#import "UIViewController+UIQuery.h"
 
 @interface IGUIViewController ()
 
@@ -17,13 +20,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // search by accessibilityIdentifier
+    IGUIQuery* q = [IGUIQuerify(self) query:@"#label"];
+    NSLog(@"query: %@", q);
+    
+    q = [IGUIQuerify(self) query:@"#label"];
+    NSLog(@"query: %@", q);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+    // IGUIQuerify(self)
 }
 
 @end
