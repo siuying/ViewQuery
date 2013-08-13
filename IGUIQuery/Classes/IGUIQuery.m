@@ -7,6 +7,7 @@
 //
 
 #import "IGUIQuery.h"
+#import "DEIgor.h"
 
 IGUIQuery* IGUIQuerify(id<NSObject> object) {
     if (!object) {

@@ -1,0 +1,3 @@
+[submodule "vendor/Subliminal"]
+	path = vendor/Subliminal
+	url = https://github.com/inkling/Subliminal.git

@@ -28,11 +28,64 @@
 		5434D60C17BA4FFF008A65E4 /* UIView+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */; };
 		5434D60F17BA5083008A65E4 /* UIViewController+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */; };
 		5434D61217BA5145008A65E4 /* NSArray+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */; };
+		5434D62517BA552A008A65E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1917BA4AA400BC8CC0 /* main.m */; };
+		5434D62617BA552A008A65E4 /* IGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */; };
+		5434D62717BA552A008A65E4 /* IGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */; };
+		5434D62817BA552A008A65E4 /* IGUIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGUIQuery.m */; };
+		5434D62917BA552A008A65E4 /* UIView+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60B17BA4FFF008A65E4 /* UIView+UIQuery.m */; };
+		5434D62A17BA552A008A65E4 /* UIViewController+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */; };
+		5434D62B17BA552A008A65E4 /* NSArray+UIQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */; };
+		5434D62D17BA552A008A65E4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */; };
+		5434D62E17BA552A008A65E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
+		5434D62F17BA552A008A65E4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */; };
+		5434D63017BA552A008A65E4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
+		5434D63217BA552A008A65E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */; };
+		5434D63317BA552A008A65E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1F17BA4AA500BC8CC0 /* Default.png */; };
+		5434D63417BA552A008A65E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2117BA4AA500BC8CC0 /* Default@2x.png */; };
+		5434D63517BA552A008A65E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */; };
+		5434D63617BA552A008A65E4 /* IGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */; };
+		5434D63D17BA5594008A65E4 /* libSubliminal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5434D61D17BA5514008A65E4 /* libSubliminal.a */; };
+		5434D64317BA55F5008A65E4 /* Integration Tests.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 5434D64217BA55F5008A65E4 /* Integration Tests.xcconfig */; };
 		F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		540C2E3517BA4AA500BC8CC0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 540C2E0217BA4AA400BC8CC0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 540C2E0917BA4AA400BC8CC0;
+			remoteInfo = IGUIQuery;
+		};
+		5434D61C17BA5514008A65E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0695D8B16011515000B05D0;
+			remoteInfo = Subliminal;
+		};
+		5434D61E17BA5514008A65E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0D240521683F7130031B67C;
+			remoteInfo = "Subliminal Unit Tests";
+		};
+		5434D62017BA5514008A65E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F0AC809416BB299500C5D5C0;
+			remoteInfo = "Subliminal Integration Tests";
+		};
+		5434D64017BA55B5008A65E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F0695D8A16011515000B05D0;
+			remoteInfo = Subliminal;
+		};
+		5434D64417BA5612008A65E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 540C2E0217BA4AA400BC8CC0 /* Project object */;
 			proxyType = 1;
@@ -72,6 +125,11 @@
 		5434D60E17BA5083008A65E4 /* UIViewController+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+UIQuery.m"; path = "Classes/UIViewController+UIQuery.m"; sourceTree = "<group>"; };
 		5434D61017BA5145008A65E4 /* NSArray+UIQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+UIQuery.h"; path = "Classes/NSArray+UIQuery.h"; sourceTree = "<group>"; };
 		5434D61117BA5145008A65E4 /* NSArray+UIQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+UIQuery.m"; path = "Classes/NSArray+UIQuery.m"; sourceTree = "<group>"; };
+		5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Subliminal.xcodeproj; path = vendor/Subliminal/Subliminal.xcodeproj; sourceTree = "<group>"; };
+		5434D63B17BA552A008A65E4 /* IGUIQuery copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IGUIQuery copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5434D63C17BA552A008A65E4 /* Integration Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Integration Tests-Info.plist"; path = "/Users/siuying/Documents/workspace/IGUIQuery/Integration Tests-Info.plist"; sourceTree = "<absolute>"; };
+		5434D63E17BA5598008A65E4 /* libPods-Igor.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = "libPods-Igor.a"; path = "Pods/build/Release-iphoneos/libPods-Igor.a"; sourceTree = "<group>"; };
+		5434D64217BA55F5008A65E4 /* Integration Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Integration Tests.xcconfig"; path = "vendor/Subliminal/Supporting Files/Xcode/Integration Tests.xcconfig"; sourceTree = "<group>"; };
 		76D1ABB13A1C48368459C806 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B63A94E9627843F3BD7975BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -98,6 +156,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5434D62C17BA552A008A65E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5434D63D17BA5594008A65E4 /* libSubliminal.a in Frameworks */,
+				5434D62D17BA552A008A65E4 /* UIKit.framework in Frameworks */,
+				5434D62E17BA552A008A65E4 /* Foundation.framework in Frameworks */,
+				5434D62F17BA552A008A65E4 /* CoreGraphics.framework in Frameworks */,
+				5434D63017BA552A008A65E4 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -106,6 +176,7 @@
 			children = (
 				540C2E1317BA4AA400BC8CC0 /* IGUIQuery */,
 				540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */,
+				5434D61317BA5484008A65E4 /* IntegrationTests */,
 				540C2E0C17BA4AA400BC8CC0 /* Frameworks */,
 				540C2E0B17BA4AA400BC8CC0 /* Products */,
 				76D1ABB13A1C48368459C806 /* Pods.xcconfig */,
@@ -117,6 +188,7 @@
 			children = (
 				540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */,
 				540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */,
+				5434D63B17BA552A008A65E4 /* IGUIQuery copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,6 +201,7 @@
 				540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */,
 				540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */,
 				B63A94E9627843F3BD7975BB /* libPods.a */,
+				5434D63E17BA5598008A65E4 /* libPods-Igor.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,6 +268,26 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		5434D61317BA5484008A65E4 /* IntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5434D64217BA55F5008A65E4 /* Integration Tests.xcconfig */,
+				5434D63C17BA552A008A65E4 /* Integration Tests-Info.plist */,
+				5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */,
+			);
+			name = IntegrationTests;
+			sourceTree = "<group>";
+		};
+		5434D61517BA5513008A65E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5434D61D17BA5514008A65E4 /* libSubliminal.a */,
+				5434D61F17BA5514008A65E4 /* Subliminal (Unit Tests).octest */,
+				5434D62117BA5514008A65E4 /* Subliminal (Integration Tests).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -236,6 +329,27 @@
 			productReference = 540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		5434D62217BA552A008A65E4 /* Integration Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5434D63817BA552A008A65E4 /* Build configuration list for PBXNativeTarget "Integration Tests" */;
+			buildPhases = (
+				5434D62317BA552A008A65E4 /* Check Pods Manifest.lock */,
+				5434D62417BA552A008A65E4 /* Sources */,
+				5434D62C17BA552A008A65E4 /* Frameworks */,
+				5434D63117BA552A008A65E4 /* Resources */,
+				5434D63717BA552A008A65E4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5434D64517BA5612008A65E4 /* PBXTargetDependency */,
+				5434D64117BA55B5008A65E4 /* PBXTargetDependency */,
+			);
+			name = "Integration Tests";
+			productName = IGUIQuery;
+			productReference = 5434D63B17BA552A008A65E4 /* IGUIQuery copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -256,13 +370,44 @@
 			mainGroup = 540C2E0117BA4AA400BC8CC0;
 			productRefGroup = 540C2E0B17BA4AA400BC8CC0 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5434D61517BA5513008A65E4 /* Products */;
+					ProjectRef = 5434D61417BA5513008A65E4 /* Subliminal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				540C2E0917BA4AA400BC8CC0 /* IGUIQuery */,
+				5434D62217BA552A008A65E4 /* Integration Tests */,
 				540C2E2F17BA4AA500BC8CC0 /* IGUIQueryTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5434D61D17BA5514008A65E4 /* libSubliminal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSubliminal.a;
+			remoteRef = 5434D61C17BA5514008A65E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5434D61F17BA5514008A65E4 /* Subliminal (Unit Tests).octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Subliminal (Unit Tests).octest";
+			remoteRef = 5434D61E17BA5514008A65E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		5434D62117BA5514008A65E4 /* Subliminal (Integration Tests).app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Subliminal (Integration Tests).app";
+			remoteRef = 5434D62017BA5514008A65E4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		540C2E0817BA4AA400BC8CC0 /* Resources */ = {
@@ -282,6 +427,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5434D63117BA552A008A65E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5434D63217BA552A008A65E4 /* InfoPlist.strings in Resources */,
+				5434D63317BA552A008A65E4 /* Default.png in Resources */,
+				5434D63417BA552A008A65E4 /* Default@2x.png in Resources */,
+				5434D63517BA552A008A65E4 /* Default-568h@2x.png in Resources */,
+				5434D63617BA552A008A65E4 /* IGUIViewController.xib in Resources */,
+				5434D64317BA55F5008A65E4 /* Integration Tests.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +489,36 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		5434D62317BA552A008A65E4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5434D63717BA552A008A65E4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -357,6 +545,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5434D62417BA552A008A65E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5434D62517BA552A008A65E4 /* main.m in Sources */,
+				5434D62617BA552A008A65E4 /* IGUIAppDelegate.m in Sources */,
+				5434D62717BA552A008A65E4 /* IGUIViewController.m in Sources */,
+				5434D62817BA552A008A65E4 /* IGUIQuery.m in Sources */,
+				5434D62917BA552A008A65E4 /* UIView+UIQuery.m in Sources */,
+				5434D62A17BA552A008A65E4 /* UIViewController+UIQuery.m in Sources */,
+				5434D62B17BA552A008A65E4 /* NSArray+UIQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -364,6 +566,16 @@
 			isa = PBXTargetDependency;
 			target = 540C2E0917BA4AA400BC8CC0 /* IGUIQuery */;
 			targetProxy = 540C2E3517BA4AA500BC8CC0 /* PBXContainerItemProxy */;
+		};
+		5434D64117BA55B5008A65E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Subliminal;
+			targetProxy = 5434D64017BA55B5008A65E4 /* PBXContainerItemProxy */;
+		};
+		5434D64517BA5612008A65E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 540C2E0917BA4AA400BC8CC0 /* IGUIQuery */;
+			targetProxy = 5434D64417BA5612008A65E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,6 +689,7 @@
 		};
 		540C2E4617BA4AA500BC8CC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGUIQuery.app/IGUIQuery";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -494,6 +707,7 @@
 		};
 		540C2E4717BA4AA500BC8CC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGUIQuery.app/IGUIQuery";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -506,6 +720,30 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		5434D63917BA552A008A65E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5434D64217BA55F5008A65E4 /* Integration Tests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "Integration Tests-Info.plist";
+				PRODUCT_NAME = "IGUIQuery copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5434D63A17BA552A008A65E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5434D64217BA55F5008A65E4 /* Integration Tests.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
+				INFOPLIST_FILE = "Integration Tests-Info.plist";
+				PRODUCT_NAME = "IGUIQuery copy";
+				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
@@ -535,6 +773,15 @@
 			buildConfigurations = (
 				540C2E4617BA4AA500BC8CC0 /* Debug */,
 				540C2E4717BA4AA500BC8CC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5434D63817BA552A008A65E4 /* Build configuration list for PBXNativeTarget "Integration Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5434D63917BA552A008A65E4 /* Debug */,
+				5434D63A17BA552A008A65E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

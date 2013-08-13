@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DEIgor.h"
 #import "UIView+UIQuery.h"
 #import "UIViewController+UIQuery.h"
 
