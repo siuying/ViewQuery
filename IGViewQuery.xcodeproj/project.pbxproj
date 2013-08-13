@@ -10,25 +10,27 @@
 		540C2E0E17BA4AA400BC8CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */; };
 		540C2E1017BA4AA400BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
 		540C2E1217BA4AA400BC8CC0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */; };
-		540C2E1817BA4AA400BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */; };
-		540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1917BA4AA400BC8CC0 /* main.m */; };
-		540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */; };
-		540C2E2017BA4AA500BC8CC0 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E1F17BA4AA500BC8CC0 /* Default.png */; };
-		540C2E2217BA4AA500BC8CC0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2117BA4AA500BC8CC0 /* Default@2x.png */; };
-		540C2E2417BA4AA500BC8CC0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */; };
-		540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */; };
-		540C2E2A17BA4AA500BC8CC0 /* IGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */; };
 		540C2E3217BA4AA500BC8CC0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */; };
 		540C2E3317BA4AA500BC8CC0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */; };
 		540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
-		540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */; };
-		540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */; };
-		5434D60817BA4EAA008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGViewQuery.m */; };
-		5434D60917BA4EAE008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D60717BA4EAA008A65E4 /* IGViewQuery.m */; };
-		5434D64B17BA64FF008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */; };
-		5434D64C17BA6506008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */; };
-		5434D64F17BA84E6008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */; };
-		5434D65017BA84EF008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */; };
+		5434D65817BA9025008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65317BA9025008A65E4 /* IGViewQuery.m */; };
+		5434D65917BA9025008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65517BA9025008A65E4 /* IGViewWrapper.m */; };
+		5434D65A17BA9025008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */; };
+		5434D65B17BA9028008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65317BA9025008A65E4 /* IGViewQuery.m */; };
+		5434D65C17BA9028008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65517BA9025008A65E4 /* IGViewWrapper.m */; };
+		5434D65D17BA9028008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */; };
+		5434D66217BA903A008A65E4 /* IGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */; };
+		5434D66317BA903A008A65E4 /* IGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D66117BA903A008A65E4 /* IGUIViewController.m */; };
+		5434D66717BA9049008A65E4 /* IGViewQuery-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5434D66417BA9049008A65E4 /* IGViewQuery-Info.plist */; };
+		5434D66817BA9049008A65E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D66617BA9049008A65E4 /* main.m */; };
+		5434D66C17BA9050008A65E4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5434D66917BA9050008A65E4 /* Default-568h@2x.png */; };
+		5434D66D17BA9050008A65E4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5434D66A17BA9050008A65E4 /* Default.png */; };
+		5434D66E17BA9050008A65E4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5434D66B17BA9050008A65E4 /* Default@2x.png */; };
+		5434D67317BA9082008A65E4 /* IGUIQueryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D67217BA9082008A65E4 /* IGUIQueryTests.m */; };
+		5434D67717BA9092008A65E4 /* IGViewQueryTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5434D67617BA9092008A65E4 /* IGViewQueryTests-Info.plist */; };
+		5451E90417BA92C1001BF4B3 /* IGUIViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5451E90017BA92C1001BF4B3 /* IGUIViewController.xib */; };
+		5451E90517BA92C1001BF4B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5451E90217BA92C1001BF4B3 /* InfoPlist.strings */; };
+		5451E90817BA92CE001BF4B3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5451E90617BA92CE001BF4B3 /* InfoPlist.strings */; };
 		F9005B58F4D84A2ABCE108EE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B63A94E9627843F3BD7975BB /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -43,35 +45,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGUIQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540C2E0A17BA4AA400BC8CC0 /* IGViewQuery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGViewQuery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		540C2E0D17BA4AA400BC8CC0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		540C2E1117BA4AA400BC8CC0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		540C2E1517BA4AA400BC8CC0 /* IGUIQuery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUIQuery-Info.plist"; sourceTree = "<group>"; };
-		540C2E1717BA4AA400BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		540C2E1917BA4AA400BC8CC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		540C2E1B17BA4AA400BC8CC0 /* IGUIQuery-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGUIQuery-Prefix.pch"; sourceTree = "<group>"; };
-		540C2E1C17BA4AA400BC8CC0 /* IGUIAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIAppDelegate.h; sourceTree = "<group>"; };
-		540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIAppDelegate.m; sourceTree = "<group>"; };
-		540C2E1F17BA4AA500BC8CC0 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		540C2E2117BA4AA500BC8CC0 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		540C2E2517BA4AA500BC8CC0 /* IGUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIViewController.h; sourceTree = "<group>"; };
-		540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIViewController.m; sourceTree = "<group>"; };
-		540C2E2917BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/IGUIViewController.xib; sourceTree = "<group>"; };
-		540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGUIQueryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		540C2E3017BA4AA500BC8CC0 /* IGViewQueryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGViewQueryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		540C2E3117BA4AA500BC8CC0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		540C2E3917BA4AA500BC8CC0 /* IGUIQueryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGUIQueryTests-Info.plist"; sourceTree = "<group>"; };
-		540C2E3B17BA4AA500BC8CC0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGUIQueryTests.h; sourceTree = "<group>"; };
-		540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGUIQueryTests.m; sourceTree = "<group>"; };
-		5434D60617BA4EAA008A65E4 /* IGViewQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewQuery.h; path = Classes/IGViewQuery.h; sourceTree = "<group>"; };
-		5434D60717BA4EAA008A65E4 /* IGViewQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewQuery.m; path = Classes/IGViewQuery.m; sourceTree = "<group>"; };
 		5434D63E17BA5598008A65E4 /* libPods-Igor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-Igor.a"; path = "Pods/build/Release-iphoneos/libPods-Igor.a"; sourceTree = "<group>"; };
-		5434D64917BA64FF008A65E4 /* IGViewWrapper+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGViewWrapper+Functional.h"; path = "Classes/IGViewWrapper+Functional.h"; sourceTree = "<group>"; };
-		5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGViewWrapper+Functional.m"; path = "Classes/IGViewWrapper+Functional.m"; sourceTree = "<group>"; };
-		5434D64D17BA84E5008A65E4 /* IGViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewWrapper.h; path = Classes/IGViewWrapper.h; sourceTree = "<group>"; };
-		5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewWrapper.m; path = Classes/IGViewWrapper.m; sourceTree = "<group>"; };
+		5434D65217BA9025008A65E4 /* IGViewQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewQuery.h; path = IGViewQuery/Classes/IGViewQuery.h; sourceTree = SOURCE_ROOT; };
+		5434D65317BA9025008A65E4 /* IGViewQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewQuery.m; path = IGViewQuery/Classes/IGViewQuery.m; sourceTree = SOURCE_ROOT; };
+		5434D65417BA9025008A65E4 /* IGViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewWrapper.h; path = IGViewQuery/Classes/IGViewWrapper.h; sourceTree = SOURCE_ROOT; };
+		5434D65517BA9025008A65E4 /* IGViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewWrapper.m; path = IGViewQuery/Classes/IGViewWrapper.m; sourceTree = SOURCE_ROOT; };
+		5434D65617BA9025008A65E4 /* IGViewWrapper+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGViewWrapper+Functional.h"; path = "IGViewQuery/Classes/IGViewWrapper+Functional.h"; sourceTree = SOURCE_ROOT; };
+		5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGViewWrapper+Functional.m"; path = "IGViewQuery/Classes/IGViewWrapper+Functional.m"; sourceTree = SOURCE_ROOT; };
+		5434D65E17BA903A008A65E4 /* IGUIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIAppDelegate.h; path = IGViewQuery/IGUIAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIAppDelegate.m; path = IGViewQuery/IGUIAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		5434D66017BA903A008A65E4 /* IGUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIViewController.h; path = IGViewQuery/IGUIViewController.h; sourceTree = SOURCE_ROOT; };
+		5434D66117BA903A008A65E4 /* IGUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIViewController.m; path = IGViewQuery/IGUIViewController.m; sourceTree = SOURCE_ROOT; };
+		5434D66417BA9049008A65E4 /* IGViewQuery-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGViewQuery-Info.plist"; path = "IGViewQuery/IGViewQuery-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5434D66517BA9049008A65E4 /* IGViewQuery-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGViewQuery-Prefix.pch"; path = "IGViewQuery/IGViewQuery-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		5434D66617BA9049008A65E4 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = IGViewQuery/main.m; sourceTree = SOURCE_ROOT; };
+		5434D66917BA9050008A65E4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "IGViewQuery/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		5434D66A17BA9050008A65E4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = IGViewQuery/Default.png; sourceTree = SOURCE_ROOT; };
+		5434D66B17BA9050008A65E4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "IGViewQuery/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		5434D67117BA9082008A65E4 /* IGUIQueryTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIQueryTests.h; path = IGViewQueryTests/IGUIQueryTests.h; sourceTree = SOURCE_ROOT; };
+		5434D67217BA9082008A65E4 /* IGUIQueryTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIQueryTests.m; path = IGViewQueryTests/IGUIQueryTests.m; sourceTree = SOURCE_ROOT; };
+		5434D67617BA9092008A65E4 /* IGViewQueryTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "IGViewQueryTests-Info.plist"; path = "IGViewQueryTests/IGViewQueryTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		5451E90117BA92C1001BF4B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = IGViewQuery/en.lproj/IGUIViewController.xib; sourceTree = SOURCE_ROOT; };
+		5451E90317BA92C1001BF4B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IGViewQuery/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+		5451E90717BA92CE001BF4B3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = IGViewQueryTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		76D1ABB13A1C48368459C806 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B63A94E9627843F3BD7975BB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,8 +106,8 @@
 		540C2E0117BA4AA400BC8CC0 = {
 			isa = PBXGroup;
 			children = (
-				540C2E1317BA4AA400BC8CC0 /* IGUIQuery */,
-				540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */,
+				540C2E1317BA4AA400BC8CC0 /* IGViewQuery */,
+				540C2E3717BA4AA500BC8CC0 /* IGViewQueryTests */,
 				540C2E0C17BA4AA400BC8CC0 /* Frameworks */,
 				540C2E0B17BA4AA400BC8CC0 /* Products */,
 				76D1ABB13A1C48368459C806 /* Pods.xcconfig */,
@@ -115,8 +117,8 @@
 		540C2E0B17BA4AA400BC8CC0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */,
-				540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */,
+				540C2E0A17BA4AA400BC8CC0 /* IGViewQuery.app */,
+				540C2E3017BA4AA500BC8CC0 /* IGViewQueryTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,49 +136,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		540C2E1317BA4AA400BC8CC0 /* IGUIQuery */ = {
+		540C2E1317BA4AA400BC8CC0 /* IGViewQuery */ = {
 			isa = PBXGroup;
 			children = (
 				5434D60517BA4E82008A65E4 /* Classes */,
-				540C2E1C17BA4AA400BC8CC0 /* IGUIAppDelegate.h */,
-				540C2E1D17BA4AA400BC8CC0 /* IGUIAppDelegate.m */,
-				540C2E2517BA4AA500BC8CC0 /* IGUIViewController.h */,
-				540C2E2617BA4AA500BC8CC0 /* IGUIViewController.m */,
-				540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */,
+				5434D65E17BA903A008A65E4 /* IGUIAppDelegate.h */,
+				5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */,
+				5434D66017BA903A008A65E4 /* IGUIViewController.h */,
+				5434D66117BA903A008A65E4 /* IGUIViewController.m */,
 				540C2E1417BA4AA400BC8CC0 /* Supporting Files */,
 			);
+			name = IGViewQuery;
 			path = IGUIQuery;
 			sourceTree = "<group>";
 		};
 		540C2E1417BA4AA400BC8CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				540C2E1517BA4AA400BC8CC0 /* IGUIQuery-Info.plist */,
-				540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */,
-				540C2E1917BA4AA400BC8CC0 /* main.m */,
-				540C2E1B17BA4AA400BC8CC0 /* IGUIQuery-Prefix.pch */,
-				540C2E1F17BA4AA500BC8CC0 /* Default.png */,
-				540C2E2117BA4AA500BC8CC0 /* Default@2x.png */,
-				540C2E2317BA4AA500BC8CC0 /* Default-568h@2x.png */,
+				5451E90017BA92C1001BF4B3 /* IGUIViewController.xib */,
+				5451E90217BA92C1001BF4B3 /* InfoPlist.strings */,
+				5434D66417BA9049008A65E4 /* IGViewQuery-Info.plist */,
+				5434D66517BA9049008A65E4 /* IGViewQuery-Prefix.pch */,
+				5434D66617BA9049008A65E4 /* main.m */,
+				5434D66917BA9050008A65E4 /* Default-568h@2x.png */,
+				5434D66A17BA9050008A65E4 /* Default.png */,
+				5434D66B17BA9050008A65E4 /* Default@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		540C2E3717BA4AA500BC8CC0 /* IGUIQueryTests */ = {
+		540C2E3717BA4AA500BC8CC0 /* IGViewQueryTests */ = {
 			isa = PBXGroup;
 			children = (
-				540C2E3D17BA4AA500BC8CC0 /* IGUIQueryTests.h */,
-				540C2E3E17BA4AA500BC8CC0 /* IGUIQueryTests.m */,
+				5434D67117BA9082008A65E4 /* IGUIQueryTests.h */,
+				5434D67217BA9082008A65E4 /* IGUIQueryTests.m */,
 				540C2E3817BA4AA500BC8CC0 /* Supporting Files */,
 			);
+			name = IGViewQueryTests;
 			path = IGUIQueryTests;
 			sourceTree = "<group>";
 		};
 		540C2E3817BA4AA500BC8CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				540C2E3917BA4AA500BC8CC0 /* IGUIQueryTests-Info.plist */,
-				540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */,
+				5451E90617BA92CE001BF4B3 /* InfoPlist.strings */,
+				5434D67617BA9092008A65E4 /* IGViewQueryTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -184,12 +188,12 @@
 		5434D60517BA4E82008A65E4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				5434D60617BA4EAA008A65E4 /* IGViewQuery.h */,
-				5434D60717BA4EAA008A65E4 /* IGViewQuery.m */,
-				5434D64D17BA84E5008A65E4 /* IGViewWrapper.h */,
-				5434D64E17BA84E6008A65E4 /* IGViewWrapper.m */,
-				5434D64917BA64FF008A65E4 /* IGViewWrapper+Functional.h */,
-				5434D64A17BA64FF008A65E4 /* IGViewWrapper+Functional.m */,
+				5434D65217BA9025008A65E4 /* IGViewQuery.h */,
+				5434D65317BA9025008A65E4 /* IGViewQuery.m */,
+				5434D65417BA9025008A65E4 /* IGViewWrapper.h */,
+				5434D65517BA9025008A65E4 /* IGViewWrapper.m */,
+				5434D65617BA9025008A65E4 /* IGViewWrapper+Functional.h */,
+				5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -197,9 +201,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		540C2E0917BA4AA400BC8CC0 /* IGUIQuery */ = {
+		540C2E0917BA4AA400BC8CC0 /* IGViewQuery */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQuery" */;
+			buildConfigurationList = 540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGViewQuery" */;
 			buildPhases = (
 				40557AC51A944C0C877BD284 /* Check Pods Manifest.lock */,
 				540C2E0617BA4AA400BC8CC0 /* Sources */,
@@ -211,14 +215,14 @@
 			);
 			dependencies = (
 			);
-			name = IGUIQuery;
+			name = IGViewQuery;
 			productName = IGUIQuery;
-			productReference = 540C2E0A17BA4AA400BC8CC0 /* IGUIQuery.app */;
+			productReference = 540C2E0A17BA4AA400BC8CC0 /* IGViewQuery.app */;
 			productType = "com.apple.product-type.application";
 		};
-		540C2E2F17BA4AA500BC8CC0 /* IGUIQueryTests */ = {
+		540C2E2F17BA4AA500BC8CC0 /* IGViewQueryTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQueryTests" */;
+			buildConfigurationList = 540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGViewQueryTests" */;
 			buildPhases = (
 				540C2E2B17BA4AA500BC8CC0 /* Sources */,
 				540C2E2C17BA4AA500BC8CC0 /* Frameworks */,
@@ -230,9 +234,9 @@
 			dependencies = (
 				540C2E3617BA4AA500BC8CC0 /* PBXTargetDependency */,
 			);
-			name = IGUIQueryTests;
+			name = IGViewQueryTests;
 			productName = IGUIQueryTests;
-			productReference = 540C2E3017BA4AA500BC8CC0 /* IGUIQueryTests.octest */;
+			productReference = 540C2E3017BA4AA500BC8CC0 /* IGViewQueryTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -245,7 +249,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Ignition Soft";
 			};
-			buildConfigurationList = 540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGUIQuery" */;
+			buildConfigurationList = 540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGViewQuery" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -257,8 +261,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				540C2E0917BA4AA400BC8CC0 /* IGUIQuery */,
-				540C2E2F17BA4AA500BC8CC0 /* IGUIQueryTests */,
+				540C2E0917BA4AA400BC8CC0 /* IGViewQuery */,
+				540C2E2F17BA4AA500BC8CC0 /* IGViewQueryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -268,11 +272,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540C2E1817BA4AA400BC8CC0 /* InfoPlist.strings in Resources */,
-				540C2E2017BA4AA500BC8CC0 /* Default.png in Resources */,
-				540C2E2217BA4AA500BC8CC0 /* Default@2x.png in Resources */,
-				540C2E2417BA4AA500BC8CC0 /* Default-568h@2x.png in Resources */,
-				540C2E2A17BA4AA500BC8CC0 /* IGUIViewController.xib in Resources */,
+				5434D66717BA9049008A65E4 /* IGViewQuery-Info.plist in Resources */,
+				5434D66C17BA9050008A65E4 /* Default-568h@2x.png in Resources */,
+				5434D66D17BA9050008A65E4 /* Default.png in Resources */,
+				5434D66E17BA9050008A65E4 /* Default@2x.png in Resources */,
+				5451E90417BA92C1001BF4B3 /* IGUIViewController.xib in Resources */,
+				5451E90517BA92C1001BF4B3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +285,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540C2E3C17BA4AA500BC8CC0 /* InfoPlist.strings in Resources */,
+				5434D67717BA9092008A65E4 /* IGViewQueryTests-Info.plist in Resources */,
+				5451E90817BA92CE001BF4B3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,12 +343,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540C2E1A17BA4AA400BC8CC0 /* main.m in Sources */,
-				540C2E1E17BA4AA400BC8CC0 /* IGUIAppDelegate.m in Sources */,
-				540C2E2717BA4AA500BC8CC0 /* IGUIViewController.m in Sources */,
-				5434D60817BA4EAA008A65E4 /* IGViewQuery.m in Sources */,
-				5434D64B17BA64FF008A65E4 /* IGViewWrapper+Functional.m in Sources */,
-				5434D64F17BA84E6008A65E4 /* IGViewWrapper.m in Sources */,
+				5434D65817BA9025008A65E4 /* IGViewQuery.m in Sources */,
+				5434D65917BA9025008A65E4 /* IGViewWrapper.m in Sources */,
+				5434D65A17BA9025008A65E4 /* IGViewWrapper+Functional.m in Sources */,
+				5434D66217BA903A008A65E4 /* IGUIAppDelegate.m in Sources */,
+				5434D66317BA903A008A65E4 /* IGUIViewController.m in Sources */,
+				5434D66817BA9049008A65E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +356,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				540C2E3F17BA4AA500BC8CC0 /* IGUIQueryTests.m in Sources */,
-				5434D60917BA4EAE008A65E4 /* IGViewQuery.m in Sources */,
-				5434D64C17BA6506008A65E4 /* IGViewWrapper+Functional.m in Sources */,
-				5434D65017BA84EF008A65E4 /* IGViewWrapper.m in Sources */,
+				5434D65B17BA9028008A65E4 /* IGViewQuery.m in Sources */,
+				5434D65C17BA9028008A65E4 /* IGViewWrapper.m in Sources */,
+				5434D65D17BA9028008A65E4 /* IGViewWrapper+Functional.m in Sources */,
+				5434D67317BA9082008A65E4 /* IGUIQueryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,32 +368,32 @@
 /* Begin PBXTargetDependency section */
 		540C2E3617BA4AA500BC8CC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 540C2E0917BA4AA400BC8CC0 /* IGUIQuery */;
+			target = 540C2E0917BA4AA400BC8CC0 /* IGViewQuery */;
 			targetProxy = 540C2E3517BA4AA500BC8CC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		540C2E1617BA4AA400BC8CC0 /* InfoPlist.strings */ = {
+		5451E90017BA92C1001BF4B3 /* IGUIViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				540C2E1717BA4AA400BC8CC0 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		540C2E2817BA4AA500BC8CC0 /* IGUIViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				540C2E2917BA4AA500BC8CC0 /* en */,
+				5451E90117BA92C1001BF4B3 /* en */,
 			);
 			name = IGUIViewController.xib;
 			sourceTree = "<group>";
 		};
-		540C2E3A17BA4AA500BC8CC0 /* InfoPlist.strings */ = {
+		5451E90217BA92C1001BF4B3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				540C2E3B17BA4AA500BC8CC0 /* en */,
+				5451E90317BA92C1001BF4B3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5451E90617BA92CE001BF4B3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5451E90717BA92CE001BF4B3 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -456,9 +462,9 @@
 			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
-				INFOPLIST_FILE = "IGUIQuery/IGUIQuery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGViewQuery/IGViewQuery-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IGViewQuery/IGViewQuery-Info.plist";
+				PRODUCT_NAME = IGViewQuery;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -468,9 +474,9 @@
 			baseConfigurationReference = 76D1ABB13A1C48368459C806 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
-				INFOPLIST_FILE = "IGUIQuery/IGUIQuery-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGViewQuery/IGViewQuery-Prefix.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/IGViewQuery/IGViewQuery-Info.plist";
+				PRODUCT_NAME = IGViewQuery;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -485,9 +491,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
-				INFOPLIST_FILE = "IGUIQueryTests/IGUIQueryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGViewQuery/IGViewQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGViewQueryTests/IGViewQueryTests-Info.plist";
+				PRODUCT_NAME = IGViewQueryTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -503,9 +509,9 @@
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "IGUIQuery/IGUIQuery-Prefix.pch";
-				INFOPLIST_FILE = "IGUIQueryTests/IGUIQueryTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "IGViewQuery/IGViewQuery-Prefix.pch";
+				INFOPLIST_FILE = "IGViewQueryTests/IGViewQueryTests-Info.plist";
+				PRODUCT_NAME = IGViewQueryTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -514,7 +520,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGUIQuery" */ = {
+		540C2E0517BA4AA400BC8CC0 /* Build configuration list for PBXProject "IGViewQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540C2E4017BA4AA500BC8CC0 /* Debug */,
@@ -523,7 +529,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQuery" */ = {
+		540C2E4217BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGViewQuery" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540C2E4317BA4AA500BC8CC0 /* Debug */,
@@ -532,7 +538,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGUIQueryTests" */ = {
+		540C2E4517BA4AA500BC8CC0 /* Build configuration list for PBXNativeTarget "IGViewQueryTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				540C2E4617BA4AA500BC8CC0 /* Debug */,
