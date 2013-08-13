@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^IGViewWrapperArrayIteratorBlock)(UIView* view);
+
 @interface IGViewWrapper : NSObject
 
 @property (nonatomic, strong) NSArray* views;
@@ -27,5 +29,15 @@
 -(IGViewWrapper*) query:(NSString*)query;
 
 -(IGViewWrapper*) andQuery:(IGViewWrapper*)query;
+
+@end
+
+@interface IGViewWrapper (ArrayExtension)
+
+-(IGViewWrapper*) first;
+
+-(IGViewWrapper*) last;
+
+-(IGViewWrapper*) each:(IGViewWrapperArrayIteratorBlock)iterator;
 
 @end

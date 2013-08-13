@@ -288,6 +288,9 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4zMDg2Nzk5MTY4IDAuNTE2MzA0MzQ3OCAwLjQ1NDQzNjc3NzcAA</bytes>
 						</object>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel"/>
+						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
 					<object class="IBUIView" id="830261476">
@@ -327,6 +330,9 @@
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC4zNjQ0MDExODI1IDAuNzU0ODE5MTIzNiAwLjIxMTczNzg1NDUAA</bytes>
+						</object>
+						<object class="IBUIAccessibilityConfiguration" key="IBUIAccessibilityConfiguration">
+							<string key="IBUIAccessibilityLabel"/>
 						</object>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>

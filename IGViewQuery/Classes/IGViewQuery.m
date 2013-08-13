@@ -8,7 +8,6 @@
 
 #import "IGViewQuery.h"
 #import "DEIgor.h"
-#import "IGViewWrapper.h"
 
 IGViewWrapper* IGViewQuerify(id<NSObject> object) {
     if (!object) {

@@ -33,16 +33,10 @@
     q = $(self, @"[tag == 2]");
     NSLog(@"query: %@", q);
     
-    // search with complex query
-    q = $(self, @"#group2 > UILabel");
-    NSLog(@"query: %@", q);
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-
-    // IGUIQuerify(self)
+    // iterate with query
+    [$(self, @"UIView > UILabel[text == 'User']") each:^(UIView* view){
+        view.backgroundColor = [UIColor blueColor];
+    }];
 }
 
 @end

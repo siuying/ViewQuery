@@ -63,9 +63,9 @@
 
 -(IGViewWrapper*) andQuery:(IGViewWrapper*)query
 {
-    NSMutableArray* views = [NSMutableArray arrayWithArray:self.views];
+    NSMutableSet* views = [NSMutableSet setWithArray:self.views];
     [views addObjectsFromArray:query.views];
-    return [IGViewWrapper wrapperWithViews:views];
+    return [IGViewWrapper wrapperWithViews:[views allObjects]];
 }
 
 #pragma mark - NSObject
@@ -73,6 +73,33 @@
 -(NSString*) description
 {
     return [NSString stringWithFormat:@"<IGUIQueryWrapper views=%@>", self.views];
+}
+
+@end
+
+@implementation IGViewWrapper (ArrayExtension)
+
+-(IGViewWrapper*) first {
+    if ([self.views count] > 0) {
+        return IGViewQuerify(self.views[0]);
+    } else {
+        return IGViewQuerify(nil);
+    }
+}
+
+-(IGViewWrapper*) last {
+    if ([self.views count] > 0) {
+        return IGViewQuerify([self.views lastObject]);
+    } else {
+        return IGViewQuerify(nil);
+    }
+}
+
+-(IGViewWrapper*) each:(IGViewWrapperArrayIteratorBlock)iterator {
+    [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
+        iterator(view);
+    }];
+    return self;
 }
 
 @end

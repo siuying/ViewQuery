@@ -15,10 +15,8 @@
 		540C2E3417BA4AA500BC8CC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540C2E0F17BA4AA400BC8CC0 /* Foundation.framework */; };
 		5434D65817BA9025008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65317BA9025008A65E4 /* IGViewQuery.m */; };
 		5434D65917BA9025008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65517BA9025008A65E4 /* IGViewWrapper.m */; };
-		5434D65A17BA9025008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */; };
 		5434D65B17BA9028008A65E4 /* IGViewQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65317BA9025008A65E4 /* IGViewQuery.m */; };
 		5434D65C17BA9028008A65E4 /* IGViewWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65517BA9025008A65E4 /* IGViewWrapper.m */; };
-		5434D65D17BA9028008A65E4 /* IGViewWrapper+Functional.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */; };
 		5434D66217BA903A008A65E4 /* IGUIAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */; };
 		5434D66317BA903A008A65E4 /* IGUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5434D66117BA903A008A65E4 /* IGUIViewController.m */; };
 		5434D66717BA9049008A65E4 /* IGViewQuery-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5434D66417BA9049008A65E4 /* IGViewQuery-Info.plist */; };
@@ -56,8 +54,6 @@
 		5434D65317BA9025008A65E4 /* IGViewQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewQuery.m; path = IGViewQuery/Classes/IGViewQuery.m; sourceTree = SOURCE_ROOT; };
 		5434D65417BA9025008A65E4 /* IGViewWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGViewWrapper.h; path = IGViewQuery/Classes/IGViewWrapper.h; sourceTree = SOURCE_ROOT; };
 		5434D65517BA9025008A65E4 /* IGViewWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGViewWrapper.m; path = IGViewQuery/Classes/IGViewWrapper.m; sourceTree = SOURCE_ROOT; };
-		5434D65617BA9025008A65E4 /* IGViewWrapper+Functional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "IGViewWrapper+Functional.h"; path = "IGViewQuery/Classes/IGViewWrapper+Functional.h"; sourceTree = SOURCE_ROOT; };
-		5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "IGViewWrapper+Functional.m"; path = "IGViewQuery/Classes/IGViewWrapper+Functional.m"; sourceTree = SOURCE_ROOT; };
 		5434D65E17BA903A008A65E4 /* IGUIAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIAppDelegate.h; path = IGViewQuery/IGUIAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGUIAppDelegate.m; path = IGViewQuery/IGUIAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		5434D66017BA903A008A65E4 /* IGUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGUIViewController.h; path = IGViewQuery/IGUIViewController.h; sourceTree = SOURCE_ROOT; };
@@ -144,6 +140,7 @@
 				5434D65F17BA903A008A65E4 /* IGUIAppDelegate.m */,
 				5434D66017BA903A008A65E4 /* IGUIViewController.h */,
 				5434D66117BA903A008A65E4 /* IGUIViewController.m */,
+				5451E90017BA92C1001BF4B3 /* IGUIViewController.xib */,
 				540C2E1417BA4AA400BC8CC0 /* Supporting Files */,
 			);
 			name = IGViewQuery;
@@ -153,7 +150,6 @@
 		540C2E1417BA4AA400BC8CC0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5451E90017BA92C1001BF4B3 /* IGUIViewController.xib */,
 				5451E90217BA92C1001BF4B3 /* InfoPlist.strings */,
 				5434D66417BA9049008A65E4 /* IGViewQuery-Info.plist */,
 				5434D66517BA9049008A65E4 /* IGViewQuery-Prefix.pch */,
@@ -192,8 +188,6 @@
 				5434D65317BA9025008A65E4 /* IGViewQuery.m */,
 				5434D65417BA9025008A65E4 /* IGViewWrapper.h */,
 				5434D65517BA9025008A65E4 /* IGViewWrapper.m */,
-				5434D65617BA9025008A65E4 /* IGViewWrapper+Functional.h */,
-				5434D65717BA9025008A65E4 /* IGViewWrapper+Functional.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -345,7 +339,6 @@
 			files = (
 				5434D65817BA9025008A65E4 /* IGViewQuery.m in Sources */,
 				5434D65917BA9025008A65E4 /* IGViewWrapper.m in Sources */,
-				5434D65A17BA9025008A65E4 /* IGViewWrapper+Functional.m in Sources */,
 				5434D66217BA903A008A65E4 /* IGUIAppDelegate.m in Sources */,
 				5434D66317BA903A008A65E4 /* IGUIViewController.m in Sources */,
 				5434D66817BA9049008A65E4 /* main.m in Sources */,
@@ -358,7 +351,6 @@
 			files = (
 				5434D65B17BA9028008A65E4 /* IGViewQuery.m in Sources */,
 				5434D65C17BA9028008A65E4 /* IGViewWrapper.m in Sources */,
-				5434D65D17BA9028008A65E4 /* IGViewWrapper+Functional.m in Sources */,
 				5434D67317BA9082008A65E4 /* IGUIQueryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

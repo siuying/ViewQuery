@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IGViewWrapper.h"
 
 // define IG_VIEWQUERY_USE_SHORTHAND to use $ instead of IGUIQuery
 #ifdef IG_VIEWQUERY_USE_SHORTHAND
 #define $ IGViewQuery
 #endif
-
-@class IGViewWrapper;
 
 extern IGViewWrapper* IGViewQuerify(id<NSObject> object);
 
