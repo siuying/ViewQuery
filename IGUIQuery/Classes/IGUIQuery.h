@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "UIView+UIQuery.h"
 #import "UIViewController+UIQuery.h"
+#import "NSArray+UIQuery.h"
 
 extern IGUIQuery* IGUIQuerify(id<NSObject> object);
 
