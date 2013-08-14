@@ -15,11 +15,6 @@
 
 @implementation IGViewWrapper
 
--(instancetype) initWithRootView:(UIView*)view query:(NSString*)query
-{
-    return [self initWithViews:[[DEIgor igor] findViewsThatMatchQuery:query inTree:view]];
-}
-
 -(instancetype) initWithView:(UIView*)view
 {
     return [self initWithViews:@[view]];
@@ -32,11 +27,6 @@
         _views = views;
     }
     return self;
-}
-
-+(instancetype) wrapperWithRootView:(UIView*)view query:(NSString*)query
-{
-    return [[self alloc] initWithRootView:view query:query];
 }
 
 +(instancetype) wrapperWithView:(UIView*)view

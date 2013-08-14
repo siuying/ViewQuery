@@ -17,13 +17,9 @@ typedef void (^IGViewWrapperArrayIteratorBlock)(id view);
 @property (nonatomic, copy, readonly) IGViewWrapper* (^and)(IGViewWrapper*);
 @property (nonatomic, copy, readonly) IGViewWrapper* (^each)(IGViewWrapperArrayIteratorBlock);
 
--(instancetype) initWithRootView:(UIView*)view query:(NSString*)query;
-
 -(instancetype) initWithView:(UIView*)view;
 
 -(instancetype) initWithViews:(NSArray*)views;
-
-+(instancetype) wrapperWithRootView:(UIView*)view query:(NSString*)query;
 
 +(instancetype) wrapperWithView:(UIView*)view;
 
