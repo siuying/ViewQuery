@@ -19,6 +19,11 @@ $(self, @"#label").each(^(UILabel* label){
     label.text = [label.text stringByAppendingFormat:@" %@", @"+"];
 });
 
+// Find last label in #header and append "(L)" to its text
+$(self, @"#header UILabel").last.each(^(UILabel* label){
+    label.text = [label.text stringByAppendingFormat:@" %@", @"(L)"];
+});
+
 // Find a button with accessibilityLabel "Button 2" and change the name to button 2b
 $(self, @"[accessibilityLabel == 'Button 2']").each(^(UIButton* button){
     [button setTitle:@"button 2b" forState:UIControlStateNormal];
@@ -29,7 +34,7 @@ $(self, @"UITextField[tag == 3]").each(^(UITextView* textField){
     textField.text = @"Hello World";
 });
 
-// find label under form that having text 'User', and set their background color to blue
+// find label under #form that having text 'User', and set their background color to blue
 $(self, @"#form UILabel[text == 'User']").each(^(UIView* view){
     NSLog(@"view: %@", view);
     view.backgroundColor = [UIColor blueColor];
