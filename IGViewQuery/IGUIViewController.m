@@ -49,7 +49,7 @@
     });
 
     // query without shorthand
-    [IGViewWrapper wrapperWithView:self.view].query(@"#label2").each(^(UILabel* label){
+    IGViewQuerify(self).query(@"#label2").each(^(UILabel* label){
         label.text = [label.text stringByAppendingFormat:@" %@", @"*"];
     });
 }
