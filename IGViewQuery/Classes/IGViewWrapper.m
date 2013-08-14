@@ -15,17 +15,17 @@
 
 @implementation IGViewWrapper
 
--(id) initWithRootView:(UIView*)view query:(NSString*)query
+-(instancetype) initWithRootView:(UIView*)view query:(NSString*)query
 {
     return [self initWithViews:[[DEIgor igor] findViewsThatMatchQuery:query inTree:view]];
 }
 
--(id) initWithView:(UIView*)view
+-(instancetype) initWithView:(UIView*)view
 {
     return [self initWithViews:@[view]];
 }
 
--(id) initWithViews:(NSArray*)views
+-(instancetype) initWithViews:(NSArray*)views
 {
     self = [super init];
     if (self) {
@@ -34,38 +34,43 @@
     return self;
 }
 
-+(id) wrapperWithRootView:(UIView*)view query:(NSString*)query
++(instancetype) wrapperWithRootView:(UIView*)view query:(NSString*)query
 {
     return [[self alloc] initWithRootView:view query:query];
 }
 
-+(id) wrapperWithView:(UIView*)view
++(instancetype) wrapperWithView:(UIView*)view
 {
     return [[self alloc] initWithView:view];
 }
 
-+(id) wrapperWithViews:(NSArray*)views
++(instancetype) wrapperWithViews:(NSArray*)views
 {
     return [[self alloc] initWithViews:views];
 }
 
 #pragma mark -
 
--(IGViewWrapper*) query:(NSString*)query
+-(IGViewWrapper* (^)(NSString*)) query
 {
-    __block IGViewWrapper* result = IGViewQuerify(nil);
-    [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
-        IGViewWrapper* q = [IGViewWrapper wrapperWithRootView:view query:query];
-        result = [result andQuery:q];
-    }];
-    return result;
+    return ^IGViewWrapper*(NSString* query) {
+        __block NSMutableArray* views = [NSMutableArray array];
+        [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
+            [views addObjectsFromArray:[[DEIgor igor] findViewsThatMatchQuery:query inTree:view]];
+        }];
+        self.views = views.copy;
+        return self;
+    };
 }
 
--(IGViewWrapper*) andQuery:(IGViewWrapper*)query
+-(IGViewWrapper* (^)(IGViewWrapper* wrapper)) and
 {
-    NSMutableSet* views = [NSMutableSet setWithArray:self.views];
-    [views addObjectsFromArray:query.views];
-    return [IGViewWrapper wrapperWithViews:[views allObjects]];
+    return ^IGViewWrapper* (IGViewWrapper* query) {
+        NSMutableArray* views = [NSMutableArray arrayWithArray:self.views];
+        [views addObjectsFromArray:query.views];
+        self.views = views.copy;
+        return self;
+    };
 }
 
 #pragma mark - NSObject
@@ -79,7 +84,8 @@
 
 @implementation IGViewWrapper (ArrayExtension)
 
--(IGViewWrapper*) first {
+-(IGViewWrapper*) first
+{
     if ([self.views count] > 0) {
         return IGViewQuerify(self.views[0]);
     } else {
@@ -87,7 +93,8 @@
     }
 }
 
--(IGViewWrapper*) last {
+-(IGViewWrapper*) last
+{
     if ([self.views count] > 0) {
         return IGViewQuerify([self.views lastObject]);
     } else {
@@ -95,11 +102,14 @@
     }
 }
 
--(IGViewWrapper*) each:(IGViewWrapperArrayIteratorBlock)iterator {
-    [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
-        iterator(view);
-    }];
-    return self;
+-(IGViewWrapper* (^)(IGViewWrapperArrayIteratorBlock)) each
+{
+    return ^IGViewWrapper* (IGViewWrapperArrayIteratorBlock iterator) {
+        [self.views enumerateObjectsUsingBlock:^(UIView* view, NSUInteger idx, BOOL *stop) {
+            iterator(view);
+        }];
+        return self;
+    };
 }
 
 @end

@@ -31,6 +31,6 @@ IGViewWrapper* IGViewQuerify(id<NSObject> object) {
 }
 
 IGViewWrapper* IGViewQuery(id<NSObject> context, NSString* query) {
-    return [IGViewQuerify(context) query:query];
+    return IGViewQuerify(context).query(query);
 }
 

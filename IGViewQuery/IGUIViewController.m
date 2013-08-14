@@ -10,6 +10,7 @@
 
 #define IG_VIEWQUERY_USE_SHORTHAND
 #import "IGViewQuery.h"
+#import "IGViewWrapper.h"
 
 @interface IGUIViewController ()
 
@@ -22,21 +23,35 @@
     [super viewDidLoad];
 
     // search by accessibilityIdentifier
-    IGViewWrapper* q = $(self, @"#label");
-    NSLog(@"query: %@", q);
+    $(self, @"#label").each(^(UILabel* label){
+        label.text = [label.text stringByAppendingFormat:@" %@", @"+"];
+    });
     
-    // search by accessibilityLabel
-    q = $(self, @"[accessibilityLabel == 'Button 2']");
-    NSLog(@"query: %@", q);
+    // Find last label in #header and append "(L)" to its text
+    $(self, @"#header UILabel").last.each(^(UILabel* label){
+        label.text = [label.text stringByAppendingFormat:@" %@", @"(L)"];
+    });
     
-    // search by tag
-    q = $(self, @"[tag == 2]");
-    NSLog(@"query: %@", q);
-    
-    // iterate with query
-    [$(self, @"UIView > UILabel[text == 'User']") each:^(UIView* view){
+    // Find a button with accessibilityLabel "Button 2" and change the name to button 2b
+    $(self, @"[accessibilityLabel == 'Button 2']").each(^(UIButton* button){
+        [button setTitle:@"button 2b" forState:UIControlStateNormal];
+    });
+
+    // set value of text field having tag 3 to "Hello World"
+    $(self, @"UITextField[tag == 3]").each(^(UITextView* textField){
+        textField.text = @"Hello World";
+    });
+
+    // find label under #form that having text 'User', and set their background color to blue
+    $(self, @"#form UILabel[text == 'User']").each(^(UIView* view){
+        NSLog(@"view: %@", view);
         view.backgroundColor = [UIColor blueColor];
-    }];
+    });
+
+    // query without shorthand
+    [IGViewWrapper wrapperWithView:self.view].query(@"#label2").each(^(UILabel* label){
+        label.text = [label.text stringByAppendingFormat:@" %@", @"*"];
+    });
 }
 
 @end

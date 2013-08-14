@@ -14,10 +14,31 @@ Add these two lines to top of your view controller implementation:
 Then use ``$( ___viewOrViewController___ , ___query___)`` to create query:
 
 ```objective-c
-// Find all UILabel under form having text 'User', change the background color to blue
-[$(self, @"#form UILabel[text == 'User']") each:^(UIView* view){
+// search by accessibilityIdentifier
+$(self, @"#label").each(^(UILabel* label){
+    label.text = [label.text stringByAppendingFormat:@" %@", @"+"];
+});
+
+// Find a button with accessibilityLabel "Button 2" and change the name to button 2b
+$(self, @"[accessibilityLabel == 'Button 2']").each(^(UIButton* button){
+    [button setTitle:@"button 2b" forState:UIControlStateNormal];
+});
+
+// set value of text field having tag 3 to "Hello World"
+$(self, @"UITextField[tag == 3]").each(^(UITextView* textField){
+    textField.text = @"Hello World";
+});
+
+// find label under form that having text 'User', and set their background color to blue
+$(self, @"#form UILabel[text == 'User']").each(^(UIView* view){
+    NSLog(@"view: %@", view);
     view.backgroundColor = [UIColor blueColor];
-}];
+});
+
+// query without shorthand
+[IGViewWrapper wrapperWithView:self.view].query(@"#label2").each(^(UILabel* label){
+    label.text = [label.text stringByAppendingFormat:@" %@", @"*"];
+});
 ```
 
 ### What is IGViewWrapper?

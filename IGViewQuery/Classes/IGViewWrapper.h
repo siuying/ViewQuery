@@ -8,27 +8,26 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^IGViewWrapperArrayIteratorBlock)(UIView* view);
+typedef void (^IGViewWrapperArrayIteratorBlock)(id view);
 
 @interface IGViewWrapper : NSObject
 
 @property (nonatomic, strong) NSArray* views;
+@property (nonatomic, copy, readonly) IGViewWrapper* (^query)(NSString*);
+@property (nonatomic, copy, readonly) IGViewWrapper* (^and)(IGViewWrapper*);
+@property (nonatomic, copy, readonly) IGViewWrapper* (^each)(IGViewWrapperArrayIteratorBlock);
 
--(id) initWithRootView:(UIView*)view query:(NSString*)query;
+-(instancetype) initWithRootView:(UIView*)view query:(NSString*)query;
 
--(id) initWithView:(UIView*)view;
+-(instancetype) initWithView:(UIView*)view;
 
--(id) initWithViews:(NSArray*)views;
+-(instancetype) initWithViews:(NSArray*)views;
 
-+(id) wrapperWithRootView:(UIView*)view query:(NSString*)query;
++(instancetype) wrapperWithRootView:(UIView*)view query:(NSString*)query;
 
-+(id) wrapperWithView:(UIView*)view;
++(instancetype) wrapperWithView:(UIView*)view;
 
-+(id) wrapperWithViews:(NSArray*)views;
-
--(IGViewWrapper*) query:(NSString*)query;
-
--(IGViewWrapper*) andQuery:(IGViewWrapper*)query;
++(instancetype) wrapperWithViews:(NSArray*)views;
 
 @end
 
@@ -37,7 +36,5 @@ typedef void (^IGViewWrapperArrayIteratorBlock)(UIView* view);
 -(IGViewWrapper*) first;
 
 -(IGViewWrapper*) last;
-
--(IGViewWrapper*) each:(IGViewWrapperArrayIteratorBlock)iterator;
 
 @end
