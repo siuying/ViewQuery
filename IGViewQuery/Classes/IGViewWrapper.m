@@ -11,6 +11,8 @@
 #import "DEIgor.h"
 
 @interface IGViewWrapper()
+@property (nonatomic, strong) NSArray* views;
+
 @end
 
 @implementation IGViewWrapper
@@ -70,9 +72,7 @@
     return [NSString stringWithFormat:@"<IGUIQueryWrapper views=%@>", self.views];
 }
 
-@end
-
-@implementation IGViewWrapper (ArrayExtension)
+#pragma mark - Array Extension
 
 -(IGViewWrapper*) first
 {

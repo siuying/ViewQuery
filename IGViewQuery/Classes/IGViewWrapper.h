@@ -12,10 +12,11 @@ typedef void (^IGViewWrapperArrayIteratorBlock)(id view);
 
 @interface IGViewWrapper : NSObject
 
-@property (nonatomic, strong) NSArray* views;
 @property (nonatomic, copy, readonly) IGViewWrapper* (^query)(NSString*);
 @property (nonatomic, copy, readonly) IGViewWrapper* (^and)(IGViewWrapper*);
 @property (nonatomic, copy, readonly) IGViewWrapper* (^each)(IGViewWrapperArrayIteratorBlock);
+@property (nonatomic, copy, readonly) IGViewWrapper* first;
+@property (nonatomic, copy, readonly) IGViewWrapper* last;
 
 -(instancetype) initWithView:(UIView*)view;
 
@@ -24,13 +25,5 @@ typedef void (^IGViewWrapperArrayIteratorBlock)(id view);
 +(instancetype) wrapperWithView:(UIView*)view;
 
 +(instancetype) wrapperWithViews:(NSArray*)views;
-
-@end
-
-@interface IGViewWrapper (ArrayExtension)
-
--(IGViewWrapper*) first;
-
--(IGViewWrapper*) last;
 
 @end
